@@ -2,6 +2,20 @@
 
 本仓库为 OpenHarmony（鸿蒙OS）智能设备开发的教学资料与配套代码，涵盖从环境搭建、C 语言设备开发到传感器模块实战的完整学习内容。
 
+## 学生快速开始
+
+如果你是学生，按下面顺序开始课程设计：
+
+1. **了解课程要求**：阅读 [`docs/course-guide.md`](./docs/course-guide.md)
+2. **确定选题**：参考 [`docs/project-ideas.md`](./docs/project-ideas.md) 的 5 个鸿蒙项目方案，或自拟课题（需教师审核）
+3. **填写选题报告**：复制 [`templates/选题报告.md`](./templates/选题报告.md) 开始填写；如果选择智能家居环境监测系统，可直接参考 [`docs/smart-home-monitoring/`](./docs/smart-home-monitoring/)
+4. **搭建开发环境**：参考 `bossay开发板/HarmonyOS设备开发环境搭建.pptx` 和 `bossay开发板/第1章 C语言HarmonyOS设备开发环境.pptx`
+5. **跑通 HelloWorld**：使用 `启航KP_IOT智能开发套件/code-master.zip` 验证环境
+6. **按学习路线开发**：阅读 [`docs/learning-path.md`](./docs/learning-path.md)
+7. **写方案和报告**：使用 [`templates/`](./templates/) 下的模板
+
+---
+
 ## 仓库结构
 
 ```
@@ -21,7 +35,17 @@
 │   └── *.zip                      # 示例代码压缩包
 │
 ├── docs/                          # 补充文档
-│   └── learning-path.md           # 学习路径指南
+│   ├── course-guide.md            # 课程目标与要求（来自课程指导书）
+│   ├── learning-path.md           # 学习路径指南
+│   ├── project-ideas.md           # 鸿蒙项目选题方案
+│   └── smart-home-monitoring/      # 智能家居环境监测系统课程设计文档
+│
+├── templates/                     # 课程设计文档模板
+│   ├── 选题报告.md
+│   ├── 系统设计方案.md
+│   ├── 测试报告.md
+│   ├── 课程设计报告.md
+│   └── 分工表.md
 │
 ├── CHANGELOG.md                   # 更新日志
 ├── FAQ.md                         # 常见问题
