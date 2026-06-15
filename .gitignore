@@ -1,0 +1,70 @@
+# Windows 系统文件
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Office 临时文件
+~$*.docx
+~$*.pptx
+~$*.xlsx
+~$*.pdf
+~$*.doc
+~$*.ppt
+~$*.xls
+~*.tmp
+*.tmp
+
+# Word 备份文件
+*.wbk
+*.wbk~
+
+# PowerPoint 临时文件
+*.pptx~
+*.pptx.tmp
+
+# 编辑器 / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.bak
+
+# 编译产物
+*.o
+*.obj
+*.elf
+*.map
+*.bin
+*.hex
+*.out
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+*.exe
+
+# 编译中间目录
+build/
+output/
+out/
+bin/
+obj/
+Debug/
+Release/
+__pycache__/
+*.pyc
+
+# 压缩包（不应直接提交到仓库）
+# *.zip
+
+# 加密/签名文件
+*.pem
+*.key
+*.jks
+*.keystore
+
+# 日志文件
+*.log
