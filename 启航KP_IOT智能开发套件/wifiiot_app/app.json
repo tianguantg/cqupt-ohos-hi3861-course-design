@@ -1,0 +1,54 @@
+{
+    "TARGET_LIB": "wifiiot_app",
+    "APP_SRCS": [
+        "init",
+        "src",
+        "application/motor_module",
+        "application/nfc_module",
+        "application/oled_module",
+        "application/smokeAlarm_module",
+        "application/humanbodyIdentify_module",
+        "application/smartDoor_module",
+        "application/heartRate_module",
+        "application/gps_module",
+        "application/smartFitness_module",
+        "application/combustibleGas_module",
+        "application/intelligentVoice_module"
+    ],
+    "INCLUDE": [
+        "components/iperf2/include",
+        "app/wifiiot_app/include",
+        "app/wifiiot_app/init",
+        "app/wifiiot_app/src",
+        "app/wifiiot_app/application/motor_module",
+        "app/wifiiot_app/application/humanbodyIdentify_module",
+        "app/wifiiot_app/application/nfc_module",
+        "app/wifiiot_app/application/smokeAlarm_module",
+        "app/wifiiot_app/application/oled_module",
+        "app/wifiiot_app/application/smartDoor_module",
+        "app/wifiiot_app/application/heartRate_module",
+        "app/wifiiot_app/application/smartFitness_module",
+        "app/wifiiot_app/application/gps_module",
+        "app/wifiiot_app/application/combustibleGas_module",
+        "app/wifiiot_app/application/intelligentVoice_module",
+        "config/app",
+        "config/diag",
+        "platform/os/Huawei_LiteOS/net/ripple/exports",
+        "components/ripple/exports",
+        "include",
+        "include/OHOS",
+        "components/hilink/include"
+    ],
+    "CC_FLAGS": [
+    ],
+    "DEFINES": [
+        "_PRE_WLAN_FEATURE_CSI",
+        "_PRE_WLAN_FEATURE_P2P",
+        "LWIP_ENABLE_DIAG_CMD=0"
+    ],
+    "AR_FLAGS": [],
+    "LD_FLAGS": [],
+    "AS_FLAGS": [],
+    "LD_DIRS": [],
+    "CLEAN": []
+}

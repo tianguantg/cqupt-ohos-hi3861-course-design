@@ -1,0 +1,3 @@
+code-master代码为helloworld代码，用此源码来搭建编译环境
+022_OH_KP_OLED_SAMPLE源码为OLED屏幕配套代码，该案例需要启航开发板搭载OLED屏幕模组
+023_OH_KP_SHT30_Agriculture为温湿度采集代码，该案例需要启航开发板搭载电机+温湿度传感器模组
