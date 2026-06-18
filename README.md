@@ -2,6 +2,24 @@
 
 本仓库整理为后续学生可直接复现的课程设计资料库。目标是减少环境试错，把难下载资源、最终项目源码、固件、烧录步骤、MQTT/Web 控制台和验收清单放到清晰位置。
 
+## 先从这里开始
+
+只想完成课程设计并复现最终效果：
+
+1. 阅读 [一页路线图](./docs/course-design/00_一页路线图.md)，确认整体流程。
+2. 按 [通用配置步骤合并精华版](./docs/course-design/01_通用配置步骤_合并精华版.md) 配好编译、烧录和串口环境。
+3. 直接烧录最终固件：`firmware/final/qihang_comfort_fan_mqtt_v6_fast_report_allinone.bin`。
+4. 使用 HiBurn：`resources/tools/HiBurn.exe`。
+5. 启动 Web 控制台：`comfort-fan-final-package/dashboard/`。
+6. 如果只想拿完整交付包，下载：`releases/comfort-fan-final-package-20260618.zip`。
+
+常用入口：
+
+- [编译与烧录指南](./comfort-fan-final-package/docs/编译烧录指南.md)
+- [MQTT 测试指南](./comfort-fan-final-package/docs/MQTT测试指南.md)
+- [Web 控制台使用指南](./comfort-fan-final-package/docs/Web控制台使用指南.md)
+- [难下载资源清单](./resources/README.md)
+
 ## 学生最快路线
 
 如果你只想完成本课程设计，按这个顺序阅读：
