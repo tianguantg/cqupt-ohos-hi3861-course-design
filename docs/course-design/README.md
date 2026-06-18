@@ -12,4 +12,10 @@
 6. [Web 控制台使用指南](../../comfort-fan-final-package/docs/Web控制台使用指南.md)
 7. [资源获取清单](../../resources/README.md)
 
+获取仓库时默认使用 Gitee：
+
+```bash
+git clone --depth 1 https://gitee.com/tianguantg/cqupt-ohos-hi3861-course-design.git
+```
+
 学生只要按这个顺序走，就能从环境搭建、首次编译、烧录串口，到最终项目验收完成闭环。

@@ -2,6 +2,21 @@
 
 本目录用于保存课程设计中难找、难下载或容易下错版本的资料。优先使用本目录已缓存资源；没有缓存的资源按官方链接下载。
 
+## 推荐获取仓库
+
+默认使用 Gitee，适合国内学生：
+
+```bash
+git clone --depth 1 https://gitee.com/tianguantg/cqupt-ohos-hi3861-course-design.git
+```
+
+备用镜像：
+
+```text
+GitHub：https://github.com/tianguantg/cqupt-ohos-hi3861-course-design.git
+GitCode：https://gitcode.com/tianguantg/cqupt-ohos-hi3861-course-design.git
+```
+
 ## 本地已缓存资源
 
 ```text

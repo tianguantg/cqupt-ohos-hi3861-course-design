@@ -4,6 +4,19 @@
 
 ## 先从这里开始
 
+推荐使用 Gitee 获取仓库，国内学生通常无需额外网络配置：
+
+```bash
+git clone --depth 1 https://gitee.com/tianguantg/cqupt-ohos-hi3861-course-design.git
+```
+
+备用镜像：
+
+```text
+GitHub：https://github.com/tianguantg/cqupt-ohos-hi3861-course-design.git
+GitCode：https://gitcode.com/tianguantg/cqupt-ohos-hi3861-course-design.git
+```
+
 只想完成课程设计并复现最终效果：
 
 1. 阅读 [一页路线图](./docs/course-design/00_一页路线图.md)，确认整体流程。
