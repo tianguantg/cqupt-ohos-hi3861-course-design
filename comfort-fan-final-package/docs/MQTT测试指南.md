@@ -1,6 +1,6 @@
 # MQTT 测试指南
 
-本文负责验证设备端和 Windows MQTT Broker 是否连通。Web 控制台依赖这里的 MQTT 通路。
+本文负责验证设备端和 Windows MQTT Broker 是否连通。后续自定义前端或完整参考 dashboard 都依赖这里的 MQTT 通路。
 
 ## 1. MQTT 代码在哪里
 
@@ -179,7 +179,7 @@ Set-Location "C:\Program Files\mosquitto"
 | `MOTOR_ON` | 开启低功率常转 |
 | `MOTOR_OFF` | 关闭低功率常转，仅保留脉冲反馈 |
 
-设备端也兼容部分变体，例如 `MOTOR=OFF`、`ECO=ON`，但文档和 Web 控制台统一使用上表命令。
+设备端也兼容部分变体，例如 `MOTOR=OFF`、`ECO=ON`，但文档和前端模板统一使用上表命令。
 
 ## 8. 串口日志判断
 
@@ -206,4 +206,4 @@ Xshell 中正常日志：
 | 订阅不到状态 | 订阅主题是否和 `CF_DEVICE_ID` 一致 |
 | 发布命令没反应 | 是否发到 `comfortfan/qihang01/cmd`，设备是否已 `MQTT connected` |
 
-MQTT 通路正常后，再继续 [Web 控制台使用指南](./Web控制台使用指南.md)。
+MQTT 通路正常后，建议先基于 [simple-dashboard 模板](../../templates/simple-dashboard/README.md) 编写或改造前端；需要参考完整实现时再阅读 [Web 控制台参考实现说明](./Web控制台使用指南.md)。

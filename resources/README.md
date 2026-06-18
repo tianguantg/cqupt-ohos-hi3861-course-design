@@ -59,7 +59,7 @@ resources/checksums/SHA256SUMS.txt
 | Repo 启动脚本 | 下载到 `~/.local/bin/repo` | `https://raw.githubusercontent.com/GerritCodeReview/git-repo/main/repo` |
 | RISC-V GCC | Hi3861 GCC 7.3.0 | `https://repo.huaweicloud.com/harmonyos/compiler/gcc_riscv32/7.3.0/linux/gcc_riscv32-linux-7.3.0.tar.gz` |
 | Mosquitto | Windows MQTT Broker | `https://mosquitto.org/download/` |
-| Node.js | Web 控制台运行环境 | `https://nodejs.org/en/download` |
+| Node.js | 自定义前端或完整参考 dashboard 运行环境 | `https://nodejs.org/en/download` |
 | CH340 / CH341 驱动 | Type-C 串口识别 | `https://www.wch-ic.com/downloads/CH341SER_EXE.html` |
 | Xshell | 串口日志工具 | `https://www.netsarang.com/en/xshell/` |
 
@@ -96,6 +96,6 @@ repo sync 失败：降低并发到 -j2 或 -j1 --fail-fast
 Git LFS 失败：重新执行 repo forall -c 'git lfs pull'
 gcc_riscv32 下载慢：优先使用华为云链接或已缓存压缩包
 Mosquitto 无法连接：检查 Windows 防火墙 1883 端口
-Web 控制台打不开：检查 8787 端口和 Node.js 是否安装
+自定义前端或参考 dashboard 打不开：检查端口和 Node.js 是否安装
 开发板没有 COM 口：安装 CH340/CH341 驱动，换 Type-C 数据线
 ```

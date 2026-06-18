@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Comfort Fan Simple Dashboard</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, "Microsoft YaHei", sans-serif;
+        background: #f6f7f9;
+        color: #20242a;
+      }
+
+      main {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 24px;
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: 26px;
+      }
+
+      section {
+        margin-top: 20px;
+        padding: 16px;
+        border: 1px solid #d9dee7;
+        border-radius: 8px;
+        background: #fff;
+      }
+
+      .commands {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      button {
+        min-width: 92px;
+        padding: 10px 12px;
+        border: 1px solid #1f6feb;
+        border-radius: 6px;
+        background: #1f6feb;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      button.secondary {
+        border-color: #667085;
+        background: #667085;
+      }
+
+      pre {
+        overflow: auto;
+        padding: 12px;
+        border-radius: 6px;
+        background: #111827;
+        color: #d1fae5;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 600;
+      }
+
+      textarea {
+        width: 100%;
+        min-height: 120px;
+        box-sizing: border-box;
+        padding: 10px;
+        border: 1px solid #cbd5e1;
+        border-radius: 6px;
+        font-family: Consolas, monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>舒适风扇最小控制页</h1>
+      <p>先用 MQTT 命令行跑通设备，再基于这个模板完成自己的前端。</p>
+
+      <section>
+        <h2>命令</h2>
+        <div class="commands">
+          <button data-command="STATUS" title="请求设备立即上报状态">STATUS</button>
+          <button data-command="AUTO" title="切换到自动模式">AUTO</button>
+          <button data-command="QUIET" title="切换到安静模式">QUIET</button>
+          <button data-command="OFF" title="关闭风扇">OFF</button>
+          <button data-command="MOTOR_OFF" class="secondary" title="关闭常转，仅保留脉冲反馈">MOTOR_OFF</button>
+          <button data-command="MOTOR_ON" class="secondary" title="恢复低功率常转">MOTOR_ON</button>
+        </div>
+      </section>
+
+      <section>
+        <h2>需要发送到 MQTT 的命令</h2>
+        <pre id="commandPreview">点击上方按钮生成 mosquitto_pub 命令</pre>
+      </section>
+
+      <section>
+        <label for="stateInput">粘贴 state JSON 进行显示练习</label>
+        <textarea id="stateInput" spellcheck="false">{"device":"qihang01","temperature":28.5,"humidity":66.0,"mode":"AUTO","virtual_speed":45,"level":"MEDIUM","eco":0,"motor_hold":1,"wifi":1,"mqtt":1}</textarea>
+        <pre id="statePreview"></pre>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -4,6 +4,8 @@
 *.c        text eol=lf
 *.h        text eol=lf
 *.json     text eol=lf
+*.html     text eol=lf
+*.js       text eol=lf
 *.gn       text eol=lf
 *.mk       text eol=lf
 *.py       text eol=lf

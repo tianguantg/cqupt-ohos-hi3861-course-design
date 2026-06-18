@@ -1,6 +1,8 @@
-# Web 控制台使用指南
+# Web 控制台参考实现说明
 
-Web 控制台用于在浏览器中查看设备状态并发送 MQTT 控制命令。它不是直接连接开发板，而是连接 Windows 上的 Mosquitto Broker。
+本目录是完整 dashboard 参考实现，用于学习、对照和故障排查。课程主线建议先完成 MQTT 命令行验证，再基于 [simple-dashboard 模板](../../templates/simple-dashboard/README.md) 编写自己的前端。
+
+完整 dashboard 不是第一次联调的必需步骤。它不是直接连接开发板，而是连接 Windows 上的 Mosquitto Broker。
 
 ## 1. 运行关系
 
@@ -14,7 +16,7 @@ Mosquitto Broker
 Hi3861 开发板 fan_manager.c
 ```
 
-设备端先按 [编译烧录指南](./编译烧录指南.md) 烧录成功，再按 [MQTT 测试指南](./MQTT测试指南.md) 确认 MQTT 通路正常，最后启动 Web 控制台。
+设备端先按 [编译烧录指南](./编译烧录指南.md) 烧录成功，再按 [MQTT 测试指南](./MQTT测试指南.md) 确认 MQTT 通路正常。需要参考完整实现时，再阅读本文。
 
 ## 2. Web 代码结构
 
@@ -72,7 +74,7 @@ Set-Location "C:\Program Files\mosquitto"
 New-NetFirewallRule -DisplayName "Mosquitto MQTT TCP 1883" -Direction Inbound -Action Allow -Protocol TCP -LocalPort 1883 -Profile Any
 ```
 
-## 5. 启动 Web 控制台
+## 5. 启动完整参考实现
 
 Windows PowerShell：
 

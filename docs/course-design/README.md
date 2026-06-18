@@ -10,8 +10,9 @@
 4. [最终项目联调指南](../../comfort-fan-final-package/docs/最终项目联调指南.md)
 5. [编译与烧录指南](../../comfort-fan-final-package/docs/编译烧录指南.md)
 6. [MQTT 测试指南](../../comfort-fan-final-package/docs/MQTT测试指南.md)
-7. [Web 控制台使用指南](../../comfort-fan-final-package/docs/Web控制台使用指南.md)
-8. [资源获取清单](../../resources/README.md)
+7. [简单前端模板](../../templates/simple-dashboard/README.md)
+8. [Web 控制台使用指南](../../comfort-fan-final-package/docs/Web控制台使用指南.md)：完整参考实现，可选
+9. [资源获取清单](../../resources/README.md)
 
 获取仓库时默认使用 Gitee：
 

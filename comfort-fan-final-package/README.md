@@ -1,13 +1,19 @@
 # 启航舒适风扇 v6 最终包
 
-本包用于课程展示、复现和归档。项目基于 OpenHarmony Hi3861，实现温湿度采集、OLED 显示、虚拟风速控制、Wi-Fi + MQTT 双向通信和 Web 远程控制台。
+本包用于课程开发、展示和归档。项目基于 OpenHarmony Hi3861，实现温湿度采集、OLED 显示、虚拟风速控制、Wi-Fi + MQTT 双向通信和前端控制。
 
-## 当前最终固件
+## 学生主线
 
 ```text
-firmware/qihang_comfort_fan_mqtt_v6_fast_report_allinone.bin
-SHA256: A7D6A890E916988BF489D9C2936A4A9F849418698423EB1F4622A1A7E74B08AC
+合入 openharmony_patch/
+→ 配置 network_config.h
+→ 自己编译 allinone 固件
+→ HiBurn 烧录
+→ mosquitto_sub/pub 验证 MQTT
+→ 基于 templates/simple-dashboard/ 编写或改造前端
 ```
+
+仓库中保留了成品固件和完整 dashboard 参考实现，供教师验收、故障对照和代码学习使用。学生主线不依赖这些成品资源。
 
 ## 主要功能
 
@@ -18,15 +24,16 @@ SHA256: A7D6A890E916988BF489D9C2936A4A9F849418698423EB1F4622A1A7E74B08AC
 - 虚拟风速 5% 平滑变化
 - MQTT 状态 1 秒周期上报
 - MQTT 远程命令控制
-- Web 控制台和手机局域网访问
+- MQTT 命令行控制
+- 简单 Web 前端或自定义前端控制
 - 默认电机低功率常转；也可切换为“敏感脉冲反馈”模式，现场噪音较大时建议关闭常转
 
 ## 目录
 
 ```text
-firmware/           最终固件和校验
+firmware/           教师验收和故障对照用固件
 openharmony_patch/  OpenHarmony 应用源码和配置模板
-dashboard/          Web 控制台
+dashboard/          完整 Web 控制台参考实现
 scripts/            编译、复制、Broker、测试脚本
 docs/               编译烧录、测试、硬件和验收文档
 evidence/           构建和串口/MQTT 日志样例
@@ -37,8 +44,9 @@ evidence/           构建和串口/MQTT 日志样例
 1. [最终项目联调指南](./docs/最终项目联调指南.md)
 2. [编译烧录指南](./docs/编译烧录指南.md)
 3. [MQTT 测试指南](./docs/MQTT测试指南.md)
-4. [Web 控制台使用指南](./docs/Web控制台使用指南.md)
-5. [实机验收记录](./docs/实机验收记录.md)
+4. [简单前端模板](../templates/simple-dashboard/README.md)
+5. [Web 控制台使用指南](./docs/Web控制台使用指南.md)：完整参考实现，可选
+6. [实机验收记录](./docs/实机验收记录.md)
 
 ## 注意
 
