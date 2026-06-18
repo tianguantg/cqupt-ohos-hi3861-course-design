@@ -32,6 +32,14 @@ docs/               编译烧录、测试、硬件和验收文档
 evidence/           构建和串口/MQTT 日志样例
 ```
 
+## 推荐阅读顺序
+
+1. [最终项目联调指南](./docs/最终项目联调指南.md)
+2. [编译烧录指南](./docs/编译烧录指南.md)
+3. [MQTT 测试指南](./docs/MQTT测试指南.md)
+4. [Web 控制台使用指南](./docs/Web控制台使用指南.md)
+5. [实机验收记录](./docs/实机验收记录.md)
+
 ## 注意
 
 `network_config.example.h` 是模板，不包含真实 Wi-Fi 密码。真实 `network_config.h` 不应提交到公开仓库。

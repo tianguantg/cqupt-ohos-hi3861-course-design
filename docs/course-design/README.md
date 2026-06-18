@@ -5,12 +5,13 @@
 推荐阅读顺序：
 
 1. [00_一页路线图.md](./00_一页路线图.md)
-2. [01_通用配置步骤.md](./01_通用配置步骤.md)
+2. [01_通用配置步骤.md](./01_通用配置步骤.md)：第一次实操主线，从准备硬件开始
 3. [最终项目包 README](../../comfort-fan-final-package/README.md)
-4. [编译与烧录指南](../../comfort-fan-final-package/docs/编译烧录指南.md)
-5. [MQTT 测试指南](../../comfort-fan-final-package/docs/MQTT测试指南.md)
-6. [Web 控制台使用指南](../../comfort-fan-final-package/docs/Web控制台使用指南.md)
-7. [资源获取清单](../../resources/README.md)
+4. [最终项目联调指南](../../comfort-fan-final-package/docs/最终项目联调指南.md)
+5. [编译与烧录指南](../../comfort-fan-final-package/docs/编译烧录指南.md)
+6. [MQTT 测试指南](../../comfort-fan-final-package/docs/MQTT测试指南.md)
+7. [Web 控制台使用指南](../../comfort-fan-final-package/docs/Web控制台使用指南.md)
+8. [资源获取清单](../../resources/README.md)
 
 获取仓库时默认使用 Gitee：
 
