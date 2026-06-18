@@ -1,0 +1,15 @@
+{
+  "name": "comfort-fan-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local MQTT control dashboard for the Qihang comfort fan demo.",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mqtt": "^5.10.1",
+    "ws": "^8.18.0"
+  }
+}

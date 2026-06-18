@@ -47,7 +47,7 @@
 1. 确认 DevEco Device Tool 版本与开发板匹配
 2. 检查 `SConscript` 和 `BUILD.gn` 配置文件中路径是否正确
 3. 确保使用的 Hi3861 SDK 版本与代码兼容
-4. 参考 `bossay开发板` 中的环境搭建 PPT 逐步排查
+4. 参考 `resources/vendor-kits/bossay开发板` 中的环境搭建 PPT 逐步排查
 
 ### Q: 烧录失败或串口无输出？
 

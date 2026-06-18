@@ -16,9 +16,9 @@
 4. 使用 `code-master.zip`（HelloWorld）验证环境
 
 ### 对应资料
-- `bossay开发板/第1章 C语言HarmonyOS设备开发环境.pptx`
-- `bossay开发板/HarmonyOS设备开发环境搭建.pptx`
-- `启航KP_IOT智能开发套件/code-master.zip`
+- `resources/vendor-kits/resources/vendor-kits/bossay开发板/第1章 C语言HarmonyOS设备开发环境.pptx`
+- `resources/vendor-kits/resources/vendor-kits/bossay开发板/HarmonyOS设备开发环境搭建.pptx`
+- `resources/vendor-kits/resources/vendor-kits/启航KP_IOT智能开发套件/code-master.zip`
 
 ---
 
@@ -34,9 +34,9 @@
 4. SCons 构建系统基础
 
 ### 对应资料
-- `bossay开发板/第2章 C语言HarmonyOS设备程序开发.pptx`
-- `bossay开发板/第3章 C语言HarmonyOS设备程序开发方法、步骤.pptx`
-- `bossay开发板/实验用源码（适配bossay开发板）.docx`
+- `resources/vendor-kits/resources/vendor-kits/bossay开发板/第2章 C语言HarmonyOS设备程序开发.pptx`
+- `resources/vendor-kits/resources/vendor-kits/bossay开发板/第3章 C语言HarmonyOS设备程序开发方法、步骤.pptx`
+- `resources/vendor-kits/resources/vendor-kits/bossay开发板/实验用源码（适配resources/vendor-kits/bossay开发板）.docx`
 
 ---
 
@@ -53,9 +53,9 @@
 5. **ADC**：模拟数字转换，读取烟雾/可燃气体传感器
 
 ### 对应资料
-- `启航KP_IOT智能开发套件/OHOS/` 目录下的 HAL 接口头文件（`wifiiot_gpio.h`、`wifiiot_i2c.h` 等）
-- `启航KP_IOT智能开发套件/附件--SHT30-DataSheet.PDF`
-- `启航KP_IOT智能开发套件/附件--Schematic_E53标准板...pdf`
+- `resources/vendor-kits/resources/vendor-kits/启航KP_IOT智能开发套件/OHOS/` 目录下的 HAL 接口头文件（`wifiiot_gpio.h`、`wifiiot_i2c.h` 等）
+- `resources/vendor-kits/resources/vendor-kits/启航KP_IOT智能开发套件/附件--SHT30-DataSheet.PDF`
+- `resources/vendor-kits/resources/vendor-kits/启航KP_IOT智能开发套件/附件--Schematic_E53标准板...pdf`
 
 ---
 
@@ -89,10 +89,10 @@
 5. 编译烧录，通过串口查看日志验证功能
 
 ### 对应资料
-- `启航KP_IOT智能开发套件/OLED显示模块实验手册.docx`
-- `启航KP_IOT智能开发套件/OpenHarmony物联网开发指南.docx`
-- `启航KP_IOT智能开发套件/OpenHarmony系统传感器-温湿度检测 - 指导手册.docx`
-- `启航KP_IOT智能开发套件/022_OH_KP_OLED_SAMPLE/README.md`
+- `resources/vendor-kits/resources/vendor-kits/启航KP_IOT智能开发套件/OLED显示模块实验手册.docx`
+- `resources/vendor-kits/resources/vendor-kits/启航KP_IOT智能开发套件/OpenHarmony物联网开发指南.docx`
+- `resources/vendor-kits/resources/vendor-kits/启航KP_IOT智能开发套件/OpenHarmony系统传感器-温湿度检测 - 指导手册.docx`
+- `resources/vendor-kits/resources/vendor-kits/启航KP_IOT智能开发套件/022_OH_KP_OLED_SAMPLE/README.md`
 
 ---
 
@@ -113,14 +113,14 @@
 
 | 资源 | 位置 |
 |------|------|
-| 环境搭建课件 | `bossay开发板/` |
-| C 语言开发课件 | `bossay开发板/` |
-| HAL 接口头文件 | `启航KP_IOT智能开发套件/OHOS/` |
-| 实验手册（DOCX） | `启航KP_IOT智能开发套件/*.docx` |
-| 硬件数据手册（PDF） | `启航KP_IOT智能开发套件/附件--*.pdf` |
-| 传感器模块源码 | `启航KP_IOT智能开发套件/wifiiot_app/application/` |
-| OLED 示例代码 | `启航KP_IOT智能开发套件/022_OH_KP_OLED_SAMPLE/` |
-| HelloWorld 模板 | `启航KP_IOT智能开发套件/code-master.zip` |
+| 环境搭建课件 | `resources/vendor-kits/resources/vendor-kits/bossay开发板/` |
+| C 语言开发课件 | `resources/vendor-kits/resources/vendor-kits/bossay开发板/` |
+| HAL 接口头文件 | `resources/vendor-kits/resources/vendor-kits/启航KP_IOT智能开发套件/OHOS/` |
+| 实验手册（DOCX） | `resources/vendor-kits/resources/vendor-kits/启航KP_IOT智能开发套件/*.docx` |
+| 硬件数据手册（PDF） | `resources/vendor-kits/resources/vendor-kits/启航KP_IOT智能开发套件/附件--*.pdf` |
+| 传感器模块源码 | `resources/vendor-kits/resources/vendor-kits/启航KP_IOT智能开发套件/wifiiot_app/application/` |
+| OLED 示例代码 | `resources/vendor-kits/resources/vendor-kits/启航KP_IOT智能开发套件/022_OH_KP_OLED_SAMPLE/` |
+| HelloWorld 模板 | `resources/vendor-kits/resources/vendor-kits/启航KP_IOT智能开发套件/code-master.zip` |
 
 ---
 

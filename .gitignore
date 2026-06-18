@@ -1,9 +1,10 @@
-# Windows 系统文件
+# Windows / macOS system files
 Thumbs.db
 Desktop.ini
 $RECYCLE.BIN/
+.DS_Store
 
-# Office 临时文件
+# Office temporary files
 ~$*.docx
 ~$*.pptx
 ~$*.xlsx
@@ -13,58 +14,82 @@ $RECYCLE.BIN/
 ~$*.xls
 ~*.tmp
 *.tmp
-
-# Word 备份文件
+*.bak
 *.wbk
 *.wbk~
-
-# PowerPoint 临时文件
 *.pptx~
 *.pptx.tmp
 
-# 编辑器 / IDE
+# Editors / IDEs
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
-.DS_Store
-*.bak
 
-# 编译产物
-*.o
-*.obj
-*.elf
-*.map
-*.bin
-*.hex
-*.out
-*.a
-*.lib
-*.dll
-*.so
-*.dylib
-*.exe
+# Secrets and local machine config
+.env
+.env.*
+*.secret
+network_config.h
+**/network_config.h
+*.pem
+*.key
+*.jks
+*.keystore
 
-# 编译中间目录
+# Node / Web dashboard generated files
+node_modules/
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OpenHarmony source and build outputs
+.repo/
+prebuilts/
+out/
 build/
 output/
-out/
 bin/
 obj/
 Debug/
 Release/
 __pycache__/
 *.pyc
+*.o
+*.obj
+*.elf
+*.map
+*.out
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+*.hex
 
-# 压缩包（不应直接提交到仓库）
-# *.zip
+# Firmware and executables are ignored by default.
+# Explicit exceptions below keep the curated teaching deliverables.
+*.bin
+*.exe
+!firmware/final/*.bin
+!comfort-fan-final-package/firmware/*.bin
+!resources/tools/HiBurn.exe
 
-# 加密/签名文件
-*.pem
-*.key
-*.jks
-*.keystore
+# Archives are ignored by default except curated resources and releases.
+*.zip
+*.7z
+*.rar
+!releases/*.zip
+!resources/vendor-kits/**/*.zip
 
-# 日志文件
+# Logs
 *.log
+!comfort-fan-final-package/evidence/*.md
+!comfort-fan-final-package/evidence/*.log
+
+# Local historical archives are retained on disk but not tracked wholesale.
+archive/**
+!archive/
+!archive/README.md

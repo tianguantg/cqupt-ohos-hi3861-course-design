@@ -1,0 +1,17 @@
+import("//build/lite/config/component/lite_component.gni")
+
+static_library("fan_manager") {
+  sources = [
+    "fan_manager.c",
+  ]
+
+  include_dirs = [
+    ".",
+    "//commonlibrary/utils_lite/include",
+    "//device/soc/hisilicon/hi3861v100/hi3861_adapter/kal/cmsis",
+    "//device/soc/hisilicon/hi3861v100/sdk_liteos/include",
+    "//device/soc/hisilicon/hi3861v100/sdk_liteos/third_party/lwip_sack/include",
+    "//foundation/communication/wifi_lite/interfaces/wifiservice",
+    "//device/soc/hisilicon/hi3861v100/sdk_liteos/third_party/paho.mqtt.c/include/mqtt",
+  ]
+}

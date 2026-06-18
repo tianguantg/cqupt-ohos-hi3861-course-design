@@ -17,6 +17,8 @@ SConscript text eol=lf
 SConstruct text eol=lf
 BUILD.gn   text eol=lf
 LICENSE    text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
 
 # 二进制文件 — 不进行文本 diff
 *.docx     binary -text
@@ -24,6 +26,10 @@ LICENSE    text eol=lf
 *.pdf      binary -text
 *.PDF      binary -text
 *.zip      binary -text
+*.7z       binary -text
+*.rar      binary -text
+*.bin      binary -text
+*.exe      binary -text
 *.png      binary -text
 *.jpg      binary -text
 *.jpeg     binary -text

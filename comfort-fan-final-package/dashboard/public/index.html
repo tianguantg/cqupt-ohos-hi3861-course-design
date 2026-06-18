@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>舒适风扇远程控制 / Comfort Fan Control</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="topline">
+        <div>
+          <p class="kicker">启航舒适风扇 / Qihang Comfort Fan</p>
+          <h1><span>远程控制台</span><small>Remote Console</small></h1>
+        </div>
+        <div class="status-strip">
+          <span class="lamp" id="brokerLamp"></span>
+          <span id="brokerText">Broker --</span>
+          <span class="divider"></span>
+          <span class="lamp" id="deviceLamp"></span>
+          <span id="deviceText">Device --</span>
+        </div>
+      </section>
+
+      <section class="dashboard">
+        <aside class="telemetry" aria-label="实时状态 / Live telemetry">
+          <div class="readout primary"><span>温度 / Temp</span><strong id="temperature">--.-</strong><em>°C</em></div>
+          <div class="readout"><span>湿度 / Humidity</span><strong id="humidity">--.-</strong><em>%RH</em></div>
+          <div class="readout"><span>虚拟风速 / Virtual speed</span><strong id="speed">--</strong><em>%</em></div>
+          <section class="insight-card" aria-label="智能提示 / Comfort insight">
+            <span>智能提示 / Comfort Insight</span>
+            <strong id="insightTitle">等待状态数据</strong>
+            <p id="insightText">收到设备状态后，这里会解释温度、湿度和模式如何共同影响风速。</p>
+          </section>
+          <div class="meters">
+            <div><span>模式 / Mode</span><strong id="mode">--</strong></div>
+            <div><span>等级 / Level</span><strong id="level">--</strong></div>
+            <div><span>节能 / ECO</span><strong id="eco">--</strong></div>
+            <div><span>持续电机 / Motor</span><strong id="motorHold">--</strong></div>
+          </div>
+        </aside>
+
+        <section class="controls" aria-label="远程命令 / Remote commands">
+          <div class="mode-pad">
+            <button class="command off" data-command="OFF" title="关闭虚拟风扇，目标风速归零 / Stop virtual fan" aria-label="关闭虚拟风扇，目标风速归零"><span>关闭</span><small>OFF</small></button>
+            <button class="command quiet" data-command="QUIET" title="切换安静模式，目标风速较低 / Quiet low-speed mode" aria-label="切换安静模式，目标风速较低"><span>安静</span><small>QUIET</small></button>
+            <button class="command auto" data-command="AUTO" title="切换自动模式，根据温湿度调节虚拟风速 / Auto comfort mode" aria-label="切换自动模式，根据温湿度调节虚拟风速"><span>自动</span><small>AUTO</small></button>
+          </div>
+          <div class="utility-pad">
+            <button class="command" data-command="ECO_ON" title="开启节能偏置，降低目标风速 / Enable ECO bias" aria-label="开启节能偏置，降低目标风速"><span>节能开</span><small>ECO ON</small></button>
+            <button class="command" data-command="ECO_OFF" title="关闭节能偏置，恢复普通目标 / Disable ECO bias" aria-label="关闭节能偏置，恢复普通目标"><span>节能关</span><small>ECO OFF</small></button>
+            <button class="command" data-command="MORE" title="提高舒适偏置，让目标风速更强 / Increase comfort bias" aria-label="提高舒适偏置，让目标风速更强"><span>更强</span><small>MORE</small></button>
+            <button class="command" data-command="LESS" title="降低舒适偏置，让目标风速更弱 / Decrease comfort bias" aria-label="降低舒适偏置，让目标风速更弱"><span>更弱</span><small>LESS</small></button>
+            <button class="command" data-command="MOTOR_ON" title="开启电机低功率常转，虚拟风速不为 0 时持续转动 / Enable low-duty motor hold" aria-label="开启电机低功率常转，虚拟风速不为 0 时持续转动"><span>电机常转</span><small>MOTOR ON</small></button>
+            <button class="command" data-command="MOTOR_OFF" title="关闭电机常转以降低噪音，保留 5% 风速变化脉冲反馈 / Disable motor hold, keep pulse feedback" aria-label="关闭电机常转以降低噪音，保留 5% 风速变化脉冲反馈"><span>关闭常转</span><small>PULSE ONLY</small></button>
+            <button class="command wide" data-command="STATUS" title="请求设备立即上报一次当前状态 / Request current status" aria-label="请求设备立即上报一次当前状态"><span>刷新状态</span><small>STATUS</small></button>
+          </div>
+
+          <article class="logic-card" aria-label="风速逻辑 / Speed logic">
+            <h2>风速逻辑 <span>Speed Logic</span></h2>
+            <p>AUTO 会先按温度决定基础目标风速，再根据湿度补偿，最后叠加 ECO/MORE/LESS 偏好。界面显示的是虚拟风速，不是电机持续转速。</p>
+            <p>电机默认常转：虚拟风速不为 0 时以最低功率持续转动；同时在等级变化或虚拟风速每变化 5% 时触发更敏感的短脉冲反馈。若现场电机转动噪音太大，可点击“关闭常转”切换为仅脉冲反馈。</p>
+            <dl>
+              <div><dt>OFF</dt><dd>目标 0%，立即回到 OFF。</dd></div>
+              <div><dt>QUIET</dt><dd>目标 25%；ECO 后为 15%。</dd></div>
+              <div><dt>AUTO Temp</dt><dd>温度基础目标：&lt;26°C=0，26-27.4=30，27.5-28.9=45，29-30.9=60，≥31=75。</dd></div>
+              <div><dt>Humidity</dt><dd>湿度补偿：&gt;65% 加 5%，&gt;75% 加 10%。温度和湿度共同决定最终目标。</dd></div>
+              <div><dt>ECO / MORE / LESS</dt><dd>ECO 是 -10%；MORE/LESS 改变偏好偏置。</dd></div>
+              <div><dt>Smooth</dt><dd>每次采样最多变化 5%，所以目标没变或正在平滑逼近时，看起来会暂时不变。</dd></div>
+              <div><dt>Level</dt><dd>0=OFF，1-35=LOW，36-60=MEDIUM，61+=HIGH。</dd></div>
+              <div><dt>Motor Hold</dt><dd>ON：虚拟风速 &gt; 0 时最低功率常转；OFF：关闭常转但保留 5% 风速变化脉冲反馈。</dd></div>
+            </dl>
+          </article>
+        </section>
+
+        <aside class="activity" aria-label="消息流 / Message stream">
+          <div class="activity-head"><span>消息流 / Stream</span><button id="clearLog" title="清空界面日志 / Clear UI log">Clear</button></div>
+          <ol id="events"></ol>
+        </aside>
+      </section>
+
+      <footer><span id="mqttUrl">mqtt://--</span><span id="topics">comfortfan/--</span></footer>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,6 +1,6 @@
 # 鸿蒙OS智能设备开发项目选题方案
 
-> 本文档基于《硬件综合设计开发课程设计指导书（2026）》和 `docs/learning-path.md` 整理，所有模块均来自 `启航KP_IOT智能开发套件/wifiiot_app/application/` 实际源码目录。
+> 本文档基于《硬件综合设计开发课程设计指导书（2026）》和 `docs/learning-path.md` 整理，所有模块均来自 `resources/vendor-kits/resources/vendor-kits/启航KP_IOT智能开发套件/wifiiot_app/application/` 实际源码目录。
 
 ---
 
@@ -115,6 +115,6 @@
 
 - [`docs/course-guide.md`](./course-guide.md) — 课程目标与要求
 - [`docs/learning-path.md`](./learning-path.md) — 完整学习路线
-- `启航KP_IOT智能开发套件/OpenHarmony物联网开发指南.docx`
-- `启航KP_IOT智能开发套件/OLED显示模块实验手册.docx`
-- `启航KP_IOT智能开发套件/OpenHarmony系统传感器-温湿度检测 - 指导手册.docx`
+- `resources/vendor-kits/resources/vendor-kits/启航KP_IOT智能开发套件/OpenHarmony物联网开发指南.docx`
+- `resources/vendor-kits/resources/vendor-kits/启航KP_IOT智能开发套件/OLED显示模块实验手册.docx`
+- `resources/vendor-kits/resources/vendor-kits/启航KP_IOT智能开发套件/OpenHarmony系统传感器-温湿度检测 - 指导手册.docx`
