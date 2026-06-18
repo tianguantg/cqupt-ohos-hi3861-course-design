@@ -20,7 +20,7 @@ GitCode：https://gitcode.com/tianguantg/cqupt-ohos-hi3861-course-design.git
 只想完成课程设计并复现最终效果：
 
 1. 阅读 [一页路线图](./docs/course-design/00_一页路线图.md)，确认整体流程。
-2. 按 [通用配置步骤合并精华版](./docs/course-design/01_通用配置步骤_合并精华版.md) 配好编译、烧录和串口环境。
+2. 按 [通用配置步骤](./docs/course-design/01_通用配置步骤.md) 配好编译、烧录和串口环境。
 3. 直接烧录最终固件：`firmware/final/qihang_comfort_fan_mqtt_v6_fast_report_allinone.bin`。
 4. 使用 HiBurn：`resources/tools/HiBurn.exe`。
 5. 启动 Web 控制台：`comfort-fan-final-package/dashboard/`。
@@ -38,7 +38,7 @@ GitCode：https://gitcode.com/tianguantg/cqupt-ohos-hi3861-course-design.git
 如果你只想完成本课程设计，按这个顺序阅读：
 
 1. [一页路线图](./docs/course-design/00_一页路线图.md)
-2. [通用配置步骤合并精华版](./docs/course-design/01_通用配置步骤_合并精华版.md)
+2. [通用配置步骤](./docs/course-design/01_通用配置步骤.md)
 3. [最终项目包说明](./comfort-fan-final-package/README.md)
 4. [编译与烧录指南](./comfort-fan-final-package/docs/编译烧录指南.md)
 5. [MQTT 测试指南](./comfort-fan-final-package/docs/MQTT测试指南.md)
@@ -119,13 +119,13 @@ hb build -f
 复制固件：
 
 ```powershell
-scp ohos@192.168.158.129:/home/ohos/workspace/openharmony-3.2-release/out/qihang/qihang/Hi3861_wifiiot_app_allinone.bin "D:\03_Assets\Exchange\OpenHarmony\"
+scp ohos@192.168.158.129:/home/ohos/workspace/openharmony-3.2-release/out/qihang/qihang/Hi3861_wifiiot_app_allinone.bin "C:\OpenHarmony\share\"
 ```
 
 启动 Web 控制台：
 
 ```powershell
-Set-Location "D:\01_Work\02_class\ohos\comfort-fan-final-package\dashboard"
+Set-Location "C:\OpenHarmony\cqupt-ohos-hi3861-course-design\comfort-fan-final-package\dashboard"
 npm install
 npm start
 ```

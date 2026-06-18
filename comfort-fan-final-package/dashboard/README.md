@@ -21,7 +21,7 @@ The dashboard shows virtual speed, not continuous motor speed.
 ## Start / 启动
 
 ```powershell
-Set-Location "D:\01_Work\02_class\ohos\comfort-fan-final-package\dashboard"
+Set-Location "C:\OpenHarmony\cqupt-ohos-hi3861-course-design\comfort-fan-final-package\dashboard"
 npm install
 npm start
 ```
