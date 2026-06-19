@@ -33,7 +33,5 @@ resources/tools/HiBurn.exe
 
 烧录流程见：
 
-```text
-docs/course-design/01_通用配置步骤_合并精华版.md
-comfort-fan-final-package/docs/编译烧录指南.md
-```
+- [通用配置步骤](../../docs/course-design/01_通用配置步骤.md)
+- [编译烧录指南](../../comfort-fan-final-package/docs/编译烧录指南.md)

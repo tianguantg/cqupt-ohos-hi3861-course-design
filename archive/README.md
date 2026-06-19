@@ -15,4 +15,4 @@ archive/20260618-duplicates/
 - `20260618-duplicates/tools` 是早期重复的 Web 控制台目录，正式版本以 `comfort-fan-final-package/dashboard/` 为准。
 - 归档中的 `node_modules/`、日志、临时构建输出默认不提交 Git。
 
-正式学生复现请从仓库根目录 `README.md` 开始。
+正式学生复现请从仓库根目录 [README.md](../README.md) 开始。

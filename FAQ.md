@@ -27,7 +27,7 @@
 
 ### Q: 为什么不把 PPT/DOCX 转成 Markdown 格式？
 
-部分课件包含大量截图、流程图和动画效果，转换为纯文本会丢失关键视觉信息。对于纯代码说明类内容（如 `022_OH_KP_OLED_SAMPLE/README.md`），已使用 Markdown 格式。
+部分课件包含大量截图、流程图和动画效果，转换为纯文本会丢失关键视觉信息。对于纯代码说明类内容（如 [022_OH_KP_OLED_SAMPLE/README.md](./resources/vendor-kits/resources/vendor-kits/启航KP_IOT智能开发套件/022_OH_KP_OLED_SAMPLE/README.md)），已使用 Markdown 格式。
 
 ### Q: 这些大文件会让仓库体积过大吗？
 

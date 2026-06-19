@@ -143,7 +143,7 @@ Type-C 连接开发板
 ## 资源原则
 
 - 能公开提交的小工具和资料放在 `resources/`。
-- 不适合直接提交或可能更新的资源，在 `resources/README.md` 中写清官方下载地址、版本和用途。
+- 不适合直接提交或可能更新的资源，在 [resources/README.md](./resources/README.md) 中写清官方下载地址、版本和用途。
 - 真实 Wi-Fi 密码、`network_config.h`、`node_modules/`、OpenHarmony 编译输出不提交。
 - 旧文件不直接删除，统一放入 `archive/` 追溯。
 

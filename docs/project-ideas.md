@@ -1,6 +1,6 @@
 # 鸿蒙OS智能设备开发项目选题方案
 
-> 本文档基于《硬件综合设计开发课程设计指导书（2026）》和 `docs/learning-path.md` 整理，所有模块均来自 `resources/vendor-kits/resources/vendor-kits/启航KP_IOT智能开发套件/wifiiot_app/application/` 实际源码目录。
+> 本文档基于《硬件综合设计开发课程设计指导书（2026）》和 [docs/learning-path.md](./learning-path.md) 整理，所有模块均来自 `resources/vendor-kits/resources/vendor-kits/启航KP_IOT智能开发套件/wifiiot_app/application/` 实际源码目录。
 
 ---
 
