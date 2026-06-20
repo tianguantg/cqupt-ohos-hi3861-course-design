@@ -1,7 +1,7 @@
 # Comfort Fan Dashboard / 舒适风扇控制台
 
-本目录是启航舒适风扇 v6 的本地远程控制界面。  
-This folder contains the local remote-control dashboard for the Qihang comfort fan v6.
+这里放的是启航舒适风扇 v6 的本地远程控制界面，主要作为完整前端参考和故障对照。  
+This is the local remote-control dashboard for the Qihang comfort fan v6, kept as a complete frontend reference.
 
 ## Speed Logic / 风速逻辑
 

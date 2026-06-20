@@ -1,10 +1,10 @@
-# 资源获取清单
+# 资源获取记录
 
-本目录用于保存课程设计中难找、难下载或容易下错版本的资料。优先使用本目录已缓存资源；没有缓存的资源按官方链接下载。
+这个目录主要是为了把容易找错、下载慢、版本不确定的资料集中放一下。能直接放进仓库的就放在这里，不能放或可能更新的就记录下载地址。
 
-## 推荐获取仓库
+## 获取仓库
 
-默认使用 Gitee，适合国内学生：
+我默认建议用 Gitee，国内网络一般更顺：
 
 ```bash
 git clone --depth 1 https://gitee.com/tianguantg/cqupt-ohos-hi3861-course-design.git
@@ -17,7 +17,7 @@ GitHub：https://github.com/tianguantg/cqupt-ohos-hi3861-course-design.git
 GitCode：https://gitcode.com/tianguantg/cqupt-ohos-hi3861-course-design.git
 ```
 
-## 本地已缓存资源
+## 已经放进仓库的资源
 
 ```text
 resources/tools/HiBurn.exe
@@ -26,7 +26,7 @@ resources/vendor-kits/bossay开发板/
 resources/vendor-kits/启航KP_IOT智能开发套件/
 ```
 
-重点资源：
+几个最常用的资源：
 
 | 资源 | 本地路径 | 用途 |
 |------|----------|------|
@@ -45,9 +45,9 @@ resources/vendor-kits/启航KP_IOT智能开发套件/
 resources/checksums/SHA256SUMS.txt
 ```
 
-## 官方下载地址
+## 备用下载地址
 
-这些链接用于从零搭建环境。若链接变化，优先搜索资源名称和版本号。
+如果仓库里的资源缺失，或者想从官方渠道重新下载，可以从这里找。若链接变化，优先搜索资源名称和版本号。
 
 | 资源 | 推荐版本/用途 | 地址 |
 |------|---------------|------|

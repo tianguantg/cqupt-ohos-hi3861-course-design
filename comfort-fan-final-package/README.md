@@ -1,8 +1,8 @@
-# 启航舒适风扇 v6 最终包
+# 启航舒适风扇 v6 项目整理
 
-本包用于课程开发、展示和归档。项目基于 OpenHarmony Hi3861，实现温湿度采集、OLED 显示、虚拟风速控制、Wi-Fi + MQTT 双向通信和前端控制。
+这个目录放的是我整理出来的最终项目相关文件：设备端代码、编译烧录说明、MQTT 测试方法、简单前端入口和一些对照材料。项目基于 OpenHarmony Hi3861，实现温湿度采集、OLED 显示、虚拟风速控制、Wi-Fi + MQTT 双向通信和前端控制。
 
-## 学生主线
+## 我实际按这个流程走
 
 ```text
 合入 openharmony_patch/
@@ -13,7 +13,7 @@
 → 基于 templates/simple-dashboard/ 编写或改造前端
 ```
 
-仓库中保留了成品固件和完整 dashboard 参考实现，供教师验收、故障对照和代码学习使用。学生主线不依赖这些成品资源。
+仓库中保留了成品固件和完整 dashboard 参考实现，用于验收、故障对照和代码参考。正常复现不依赖这些成品资源。
 
 ## 主要功能
 
@@ -31,7 +31,7 @@
 ## 目录
 
 ```text
-firmware/           教师验收和故障对照用固件
+firmware/           验收和故障对照用固件
 openharmony_patch/  OpenHarmony 应用源码和配置模板
 dashboard/          完整 Web 控制台参考实现
 scripts/            编译、复制、Broker、测试脚本
@@ -39,7 +39,7 @@ docs/               编译烧录、测试、硬件和验收文档
 evidence/           构建和串口/MQTT 日志样例
 ```
 
-## 推荐阅读顺序
+## 建议阅读顺序
 
 1. [最终项目联调指南](./docs/最终项目联调指南.md)
 2. [编译烧录指南](./docs/编译烧录指南.md)
@@ -50,4 +50,4 @@ evidence/           构建和串口/MQTT 日志样例
 
 ## 注意
 
-`network_config.example.h` 是模板，不包含真实 Wi-Fi 密码。真实 `network_config.h` 不应提交到公开仓库。
+`network_config.example.h` 只是模板，不包含真实 Wi-Fi 密码。真实 `network_config.h` 只放在自己的编译环境里，不要提交到公开仓库。

@@ -1,10 +1,10 @@
-# 重庆邮电大学 OpenHarmony Hi3861 课程设计资料库
+# OpenHarmony Hi3861 课程设计实操整理
 
-本仓库整理为后续学生可按步骤完成课程设计的资料库。目标是减少环境试错，把难下载资源、配置步骤、设备端源码、MQTT 验证方法、前端模板和验收清单放到清晰位置。
+这是我把 OpenHarmony Hi3861 课程设计从环境搭建、第一次编译成功、烧录串口，到 MQTT 和前端联调过程中用到的资料整理到一起的仓库。重点放在实际操作、常见问题和资源位置上，方便后面做这个方向时少走一些环境和下载资源的弯路。
 
 ## 先从这里开始
 
-推荐使用 Gitee 获取仓库，国内学生通常无需额外网络配置：
+建议优先用 Gitee 获取仓库，国内网络一般更省事：
 
 ```bash
 git clone --depth 1 https://gitee.com/tianguantg/cqupt-ohos-hi3861-course-design.git
@@ -17,7 +17,7 @@ GitHub：https://github.com/tianguantg/cqupt-ohos-hi3861-course-design.git
 GitCode：https://gitcode.com/tianguantg/cqupt-ohos-hi3861-course-design.git
 ```
 
-建议按下面顺序完成课程设计：
+如果是第一次打开这个仓库，可以按下面顺序走：
 
 1. 阅读 [一页路线图](./docs/course-design/00_一页路线图.md)，确认整体流程。
 2. 按 [通用配置步骤](./docs/course-design/01_通用配置步骤.md) 从硬件准备开始实操，配好编译、烧录和串口环境。
@@ -26,7 +26,7 @@ GitCode：https://gitcode.com/tianguantg/cqupt-ohos-hi3861-course-design.git
 5. 先用 [MQTT 测试指南](./comfort-fan-final-package/docs/MQTT测试指南.md) 跑通命令行收发。
 6. 基于 [simple-dashboard 模板](./templates/simple-dashboard/README.md) 编写自己的前端，或参考完整 dashboard 进一步优化。
 
-常用入口：
+常用入口我放在这里：
 
 - [编译与烧录指南](./comfort-fan-final-package/docs/编译烧录指南.md)
 - [MQTT 测试指南](./comfort-fan-final-package/docs/MQTT测试指南.md)
@@ -34,9 +34,9 @@ GitCode：https://gitcode.com/tianguantg/cqupt-ohos-hi3861-course-design.git
 - [Web 控制台使用指南](./comfort-fan-final-package/docs/Web控制台使用指南.md)：完整参考实现，可选
 - [难下载资源清单](./resources/README.md)
 
-## 学生最快路线
+## 推荐阅读顺序
 
-如果你只想完成本课程设计，按这个顺序阅读：
+想从零做到最后联调，建议按这个顺序读：
 
 1. [一页路线图](./docs/course-design/00_一页路线图.md)
 2. [通用配置步骤](./docs/course-design/01_通用配置步骤.md)：第一次实操主线，从准备硬件开始
@@ -48,7 +48,7 @@ GitCode：https://gitcode.com/tianguantg/cqupt-ohos-hi3861-course-design.git
 8. [Web 控制台使用指南](./comfort-fan-final-package/docs/Web控制台使用指南.md)：完整参考实现，可选
 9. [资源获取清单](./resources/README.md)
 
-## 当前最终项目
+## 当前整理的最终项目
 
 项目：启航舒适风扇 v6
 
@@ -68,7 +68,7 @@ GitCode：https://gitcode.com/tianguantg/cqupt-ohos-hi3861-course-design.git
 comfort-fan-final-package/
 ```
 
-说明：仓库中保留了教师验收、故障对照和历史归档用的成品资源，但学生主线默认要求自己编译固件、自己完成 MQTT 验证和前端实现。
+说明：仓库里保留了一些成品资源，主要是为了故障对照和历史归档。实际完成课程设计时，建议自己合入代码、自己编译固件、自己完成 MQTT 验证和前端控制。
 
 ## 仓库结构
 
@@ -83,7 +83,7 @@ comfort-fan-final-package/
 │   └── smart-home-monitoring/
 ├── comfort-fan-final-package/     # 最终项目源码、联调文档、脚本和参考实现
 ├── firmware/
-│   └── final/                     # 教师验收和故障对照用固件，学生主线不依赖
+│   └── final/                     # 故障对照用固件，正常流程不依赖
 ├── resources/
 │   ├── README.md                  # 难下载资源索引
 │   ├── tools/                     # 本地缓存工具，例如 HiBurn
@@ -149,4 +149,4 @@ Type-C 连接开发板
 
 ## 许可证与用途
 
-本仓库用于课程学习、课程设计复现和教学归档。第三方工具、课件、数据手册和开发板资料请遵循其原始许可和学校课程要求。
+这里主要用于课程学习、个人复现和资料备份。第三方工具、课件、数据手册和开发板资料仍然按原始许可和课程要求使用。

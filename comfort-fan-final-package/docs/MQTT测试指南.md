@@ -1,6 +1,6 @@
-# MQTT 测试指南
+# MQTT 测试步骤
 
-本文负责验证设备端和 Windows MQTT Broker 是否连通。后续自定义前端或完整参考 dashboard 都依赖这里的 MQTT 通路。
+这篇主要用来确认设备端和 Windows MQTT Broker 是否连通。后面自己写前端，或者参考完整 dashboard，都要先保证这里的 MQTT 通路正常。
 
 ## 1. MQTT 代码在哪里
 
@@ -206,4 +206,4 @@ Xshell 中正常日志：
 | 订阅不到状态 | 订阅主题是否和 `CF_DEVICE_ID` 一致 |
 | 发布命令没反应 | 是否发到 `comfortfan/qihang01/cmd`，设备是否已 `MQTT connected` |
 
-MQTT 通路正常后，建议先基于 [simple-dashboard 模板](../../templates/simple-dashboard/README.md) 编写或改造前端；需要参考完整实现时再阅读 [Web 控制台参考实现说明](./Web控制台使用指南.md)。
+MQTT 通路正常后，建议先基于 [simple-dashboard 模板](../../templates/simple-dashboard/README.md) 编写或改造前端；需要参考完整实现时再阅读 [Web 控制台参考记录](./Web控制台使用指南.md)。
