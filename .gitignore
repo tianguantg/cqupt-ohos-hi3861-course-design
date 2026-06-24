@@ -76,6 +76,7 @@ __pycache__/
 !firmware/final/*.bin
 !comfort-fan-final-package/firmware/*.bin
 !resources/tools/HiBurn.exe
+!resources/tools/mosquitto-2.1.2-install-windows-x64.exe
 
 # Archives are ignored by default except curated resources and releases.
 *.zip
